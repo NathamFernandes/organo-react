@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Banner from './components/Banner/Banner';
+// import './App.css';
+import Banner from './components/Banner';
+import TextInput from './components/TextInput';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <header className="App-header">
+      <div className="test">
+        <TextInput label="Nome" placeholder="Digite seu nome" />
+        <TextInput label="Cargo" placeholder="Digite seu cargo" />
+        <TextInput label="Imagem" placeholder="Informe uma imagem" />
+      </div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +24,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
